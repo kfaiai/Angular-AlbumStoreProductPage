@@ -13,6 +13,6 @@ export class ProductDescriptionComponent implements OnInit {
   ngOnInit() {
     this._productService
       .getAlbum(1)
-      .subribe(response => (this.albumInfo = response));
+      .subscribe(response => (this.albumInfo = response));
   }
 }
